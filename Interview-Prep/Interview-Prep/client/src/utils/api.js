@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Set base URL for API
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://interview-prep2.onrender.com';
 axios.defaults.baseURL = API_BASE_URL;
 
 // Helper function to set auth token
